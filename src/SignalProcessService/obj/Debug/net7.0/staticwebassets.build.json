@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WsCiJJZJi0Rv3heclLexG6iopyVd3PFeXG2/c4P+HTA=",
+  "Source": "SignalProcessService",
+  "BasePath": "_content/SignalProcessService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
