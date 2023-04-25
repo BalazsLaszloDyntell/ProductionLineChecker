@@ -8,6 +8,7 @@ document.getElementById("sendButton").disabled = true;
 connection.on("StartProd", function (_prod) {
   console.log(_prod);
   let prod = JSON.parse(_prod);
+  var table = document.getElementById("prodList");
   var tr = document.createElement("tr");
 
   var td1 = document.createElement("td");
@@ -21,7 +22,7 @@ connection.on("StartProd", function (_prod) {
   tr.appendChild(td2);
   tr.appendChild(td3);
 
-  document.getElementById("prodList").appendChild(tr);
+  table.insertBefore(tr, table.children[1]);
 });
 
 connection.start().then(function () {
@@ -33,12 +34,14 @@ connection.start().then(function () {
 document.getElementById("sendButton").addEventListener("click", async function (event) {
   let count = 0;
   while(count < 100) {
-    await setTimeout(() => {
+    await new Promise((resolve) => {
+      setTimeout(() => {
         connection.invoke("StartProd").catch(function (err) {
           return console.error(err.toString());
-      });
-      event.preventDefault();
-    }, 1000)
+        });
+        resolve();
+      }, 1000)
+    });
     count++;
   }
 });
