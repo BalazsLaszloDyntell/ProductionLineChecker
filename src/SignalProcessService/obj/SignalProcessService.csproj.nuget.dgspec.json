@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj": {}
+    "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj": {
+    "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
+        "projectUniqueName": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
         "projectName": "SignalProcessService",
-        "projectPath": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
+        "projectPath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\obj\\",
+        "outputPath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapr.Actors": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "Dapr.Actors.AspNetCore": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "Dapr.AspNetCore": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
