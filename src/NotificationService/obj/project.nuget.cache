@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "5LjjtYUFulMCafIrgsyIFCM4uUZKjve8L8roCtZ1M1Jm8Dt2QEFIuxagv1fW6NTLlGTTG9Y0oR8D4MG6ak+uxA==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\dapr.aspnetcore\\1.9.0\\dapr.aspnetcore.1.9.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\dapr.client\\1.9.0\\dapr.client.1.9.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\dapr.extensions.configuration\\1.9.0\\dapr.extensions.configuration.1.9.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\google.api.commonprotos\\2.2.0\\google.api.commonprotos.2.2.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\google.protobuf\\3.15.0\\google.protobuf.3.15.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\grpc.core.api\\2.47.0\\grpc.core.api.2.47.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\grpc.net.client\\2.47.0\\grpc.net.client.2.47.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\grpc.net.common\\2.47.0\\grpc.net.common.2.47.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.2\\microsoft.extensions.configuration.3.1.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.2\\microsoft.extensions.configuration.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.2\\microsoft.extensions.primitives.3.1.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.io.pipelines\\4.7.2\\system.io.pipelines.4.7.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

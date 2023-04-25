@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <input style="float: left; margin-bottom: 10px;" type="button" id="sendButton" value="Start production" />
+    <table id="prodList" style="max-height: 80vh;">
+        <tr>
+            <th>Barcode</th>
+            <th>Name</th>
+            <th>ProductionLine</th>
+        </tr>
+        @foreach (var item in Model.Productions)
+        {
+            <tr>
+                <td>@item.Barcode</td>
+                <td>@item.Name</td>
+                <td>@item.ProductionLineId</td>
+            </tr>
+        }
+    </table>
+    <ul id="messagesList"></ul>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>

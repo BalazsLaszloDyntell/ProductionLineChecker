@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\obj\\Debug\\net7.0\\project.razor.json",
-  "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
+  "SerializedFilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "7.0",
@@ -18642,7 +18642,7 @@
     ],
     "CSharpLanguageVersion": 1100
   },
-  "RootNamespace": "SignalProcessService",
+  "RootNamespace": "NotificationService",
   "Documents": [],
   "SerializationFormat": "0.3"
 }

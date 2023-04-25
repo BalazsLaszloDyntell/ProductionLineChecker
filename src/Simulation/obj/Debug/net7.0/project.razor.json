@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\obj\\Debug\\net7.0\\project.razor.json",
-  "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
+  "SerializedFilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\Simulation\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\Simulation\\Simulation.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "7.0",
@@ -18642,7 +18642,38 @@
     ],
     "CSharpLanguageVersion": 1100
   },
-  "RootNamespace": "SignalProcessService",
-  "Documents": [],
+  "RootNamespace": "Simulation",
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\Simulation\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\Simulation\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\Simulation\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\Simulation\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\Simulation\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\Simulation\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.3"
 }
