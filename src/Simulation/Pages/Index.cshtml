@@ -11,15 +11,9 @@
             <th>Barcode</th>
             <th>Name</th>
             <th>ProductionLine</th>
+            <th>Checkpoint</th>
+            <th>Timestamp</th>
         </tr>
-        @foreach (var item in Model.Productions)
-        {
-            <tr>
-                <td>@item.Barcode</td>
-                <td>@item.Name</td>
-                <td>@item.ProductionLineId</td>
-            </tr>
-        }
     </table>
     <ul id="messagesList"></ul>
 </div>

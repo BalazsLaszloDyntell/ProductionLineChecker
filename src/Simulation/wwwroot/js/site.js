@@ -17,10 +17,20 @@ connection.on("StartProd", function (_prod) {
   td2.textContent = prod?.Name;
   var td3 = document.createElement("td");
   td3.textContent = prod?.ProductionLineId;
+  var td4 = document.createElement("td");
+  td4.textContent = prod?.Checkpoint;
+  var td5 = document.createElement("td");
+  td5.textContent = new Date(prod?.Timestamp).toLocaleDateString('ro-RO', {
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric"
+  });
 
   tr.appendChild(td1);
   tr.appendChild(td2);
   tr.appendChild(td3);
+  tr.appendChild(td4);
+  tr.appendChild(td5);
 
   table.insertBefore(tr, table.children[1]);
 });
@@ -32,16 +42,7 @@ connection.start().then(function () {
 });
 
 document.getElementById("sendButton").addEventListener("click", async function (event) {
-  let count = 0;
-  while(count < 100) {
-    await new Promise((resolve) => {
-      setTimeout(() => {
-        connection.invoke("StartProd").catch(function (err) {
-          return console.error(err.toString());
-        });
-        resolve();
-      }, 1000)
-    });
-    count++;
-  }
+  connection.invoke("StartProd").catch(function (err) {
+    return console.error(err.toString());
+  });
 });
