@@ -24,3 +24,14 @@ C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\obj\De
 C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\obj\Debug\net7.0\SignalProcessService.pdb
 C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\obj\Debug\net7.0\SignalProcessService.genruntimeconfig.cache
 C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\obj\Debug\net7.0\ref\SignalProcessService.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Dapr.Actors.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Dapr.Actors.AspNetCore.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Dapr.AspNetCore.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Dapr.Client.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Google.Api.CommonProtos.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Grpc.Core.Api.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Grpc.Net.Client.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Grpc.Net.Common.dll
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\obj\Debug\net7.0\SignalProcessService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\obj\Debug\net7.0\SignalProcessService.csproj.CopyComplete

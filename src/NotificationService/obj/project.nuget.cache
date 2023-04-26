@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5LjjtYUFulMCafIrgsyIFCM4uUZKjve8L8roCtZ1M1Jm8Dt2QEFIuxagv1fW6NTLlGTTG9Y0oR8D4MG6ak+uxA==",
+  "dgSpecHash": "hCUKdngzwvUKuQ7aEI3bWpyfaRFFbKY7jfJHk5zsjVUlL0ZWHg1VleqfBMK9e0QBKkcPAWsnOP7y9wEXfgLX9w==",
   "success": true,
-  "projectFilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj",
+  "projectFilePath": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\dapr.aspnetcore\\1.9.0\\dapr.aspnetcore.1.9.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\dapr.client\\1.9.0\\dapr.client.1.9.0.nupkg.sha512",

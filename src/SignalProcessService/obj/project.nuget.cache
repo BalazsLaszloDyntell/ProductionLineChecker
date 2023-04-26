@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0rrDQ5Qrtg5aDyp8+tV20FT6NgFz+XxR2VZvOA/aMlnu/AxX2pSNL/0yhQSmfKE8uRyd9DXf/MAnxiNYfC1NsQ==",
+  "dgSpecHash": "QIRbJphJqYMcB2D87N8oY24DvYFA7iVEIB/aCFD0duoA0RTLc22ekn9ga8NCcst/aRhDhffFwEdzwsFtcwmjIg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
+  "projectFilePath": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\dapr.actors\\1.9.0\\dapr.actors.1.9.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\dapr.actors.aspnetcore\\1.9.0\\dapr.actors.aspnetcore.1.9.0.nupkg.sha512",

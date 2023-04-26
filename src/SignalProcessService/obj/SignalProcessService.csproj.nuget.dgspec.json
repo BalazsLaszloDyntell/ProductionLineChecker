@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj": {}
+    "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj": {}
   },
   "projects": {
-    "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj": {
+    "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
         "projectName": "SignalProcessService",
-        "projectPath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\SignalProcessService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\SignalProcessService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,17 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: entrycheckpoint
+  namespace: dapr-signalprocess
+spec:
+  type: bindings.mqtt
+  version: v1
+  metadata:
+  - name: url
+    value: mqtt://localhost:1323
+  - name: topic
+    value: signalprocess/entrycheckpoint
+  - name: consumerID
+    value: "{uuid}"
+scopes:
+  - signalprocessservice

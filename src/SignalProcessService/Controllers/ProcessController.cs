@@ -29,7 +29,7 @@ public class ProcessController : ControllerBase
 
 #if !USE_ACTORMODEL
 
-    [HttpPost("entrycam")]
+    [HttpPost("entrycheckpoint")]
     public async Task<ActionResult> ProductEntryAsync(ProductRegistered msg)
     {
         try
@@ -37,7 +37,7 @@ public class ProcessController : ControllerBase
             // log entry
             _logger.LogInformation($"ENTRY detected in lane {msg.Lane} at {msg.Timestamp.ToString("hh:mm:ss")} " +
                 $"of product with barcode {msg.Barcode}.");
-
+            Console.WriteLine("asdasdasd");
             // store product state
             var productState = new ProductState(msg.Barcode, msg.Timestamp, null);
             await _productStateRepository.SaveProductStateAsync(productState);
@@ -51,7 +51,7 @@ public class ProcessController : ControllerBase
         }
     }
 
-    [HttpPost("exitcam")]
+    [HttpPost("exitcheckpoint")]
     public async Task<ActionResult> ProductExitAsync(ProductRegistered msg, [FromServices] DaprClient daprClient)
     {
         try
@@ -72,8 +72,8 @@ public class ProcessController : ControllerBase
             await _productStateRepository.SaveProductStateAsync(exitState);
 
             // handle possible speeding violation
-            int delay = _expectedSpeedCalculator.DetermineExpectedSpeedInMm(exitState.EntryTimestamp, exitState.ExitTimestamp.Value);
-            if (delay > 0)
+            int delay = _expectedSpeedCalculator.DetermineDelay(exitState.EntryTimestamp, exitState.ExitTimestamp.Value);
+            if (true)
             {
                 var productionIssue = new ProductionIssue
                 {
@@ -98,7 +98,7 @@ public class ProcessController : ControllerBase
 
 #else
 
-        [HttpPost("entrycam")]
+        [HttpPost("entrycheckpoint")]
         public async Task<ActionResult> ProductEntryAsync(ProductRegistered msg)
         {
             try
@@ -114,7 +114,7 @@ public class ProcessController : ControllerBase
             }
         }
 
-        [HttpPost("exitcam")]
+        [HttpPost("exitcheckpoint")]
         public async Task<ActionResult> ProductExitAsync(ProductRegistered msg)
         {
             try

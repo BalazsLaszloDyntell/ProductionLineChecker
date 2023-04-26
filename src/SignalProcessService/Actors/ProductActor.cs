@@ -59,7 +59,7 @@ public class ProductActor : Actor, IProductActor, IRemindable
             await this.StateManager.SetStateAsync("ProductState", productState);
 
             // handle expected speed
-            int delay = _expectedSpeedCalculator.DetermineExpectedSpeedInMm(
+            int delay = _expectedSpeedCalculator.DetermineDelay(
                 productState.EntryTimestamp, productState.ExitTimestamp.Value);
             if (delay > 0)
             {

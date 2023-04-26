@@ -15,12 +15,12 @@ public class DefaultExpectedSpeedCalculator : IExpectedSpeedCalculator
         _legalCorrectionInMm = legalCorrectionInMm;
     }
 
-    public int DetermineExpectedSpeedInMm(DateTime entryTimestamp, DateTime exitTimestamp)
+    public int DetermineDelay(DateTime entryTimestamp, DateTime exitTimestamp)
     {
         double elapsedMinutes = exitTimestamp.Subtract(entryTimestamp).TotalSeconds; // 1 sec. == 1 min. in simulation
-        double avgSpeedInKmh = Math.Round((_sectionLengthInMeter / elapsedMinutes) * 60);
-        int violation = Convert.ToInt32(avgSpeedInKmh - _maxExpectedSpeedInMm - _legalCorrectionInMm);
-        return violation;
+        double avgSpeedInM = Math.Round((_sectionLengthInMeter / elapsedMinutes) * 60);
+        int delay = Convert.ToInt32(avgSpeedInM - _maxExpectedSpeedInMm - _legalCorrectionInMm);
+        return delay;
     }
 
     public string GetProductionLineId()

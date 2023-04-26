@@ -24,6 +24,6 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.MapHub<ProdHub>("/startprod");
+app.MapHub<ProductionSimulation>("/startprod");
 
 app.Run();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj": {}
+    "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj": {}
   },
   "projects": {
-    "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj": {
+    "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj",
         "projectName": "NotificationService",
-        "projectPath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\NotificationService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\ProductionLineChecker\\src\\NotificationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

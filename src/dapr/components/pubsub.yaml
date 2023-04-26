@@ -1,0 +1,24 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub
+  namespace: dapr-signalprocess
+spec:
+  type: pubsub.rabbitmq
+  version: v1
+  metadata:
+  - name: host
+    value: "amqp://localhost:6454"
+  - name: durable
+    value: "false"
+  - name: deletedWhenUnused
+    value: "false"
+  - name: autoAck
+    value: "false"
+  - name: reconnectWait
+    value: "0"
+  - name: concurrency
+    value: parallel
+scopes:
+  - signalprocessservice
+  - notificationservice
