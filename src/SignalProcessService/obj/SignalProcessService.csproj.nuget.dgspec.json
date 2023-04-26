@@ -51,6 +51,10 @@
             "Dapr.AspNetCore": {
               "target": "Package",
               "version": "[1.9.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

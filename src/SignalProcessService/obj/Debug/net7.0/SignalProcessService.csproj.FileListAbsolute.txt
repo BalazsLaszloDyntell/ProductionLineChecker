@@ -35,3 +35,4 @@ C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\De
 C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Grpc.Net.Common.dll
 C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\obj\Debug\net7.0\SignalProcessService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\obj\Debug\net7.0\SignalProcessService.csproj.CopyComplete
+C:\Users\User\source\repos\ProductionLineChecker\src\SignalProcessService\bin\Debug\net7.0\Newtonsoft.Json.dll
