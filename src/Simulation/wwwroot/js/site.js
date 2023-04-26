@@ -14,7 +14,7 @@ connection.on("StartProd", function (_prod) {
   var td1 = document.createElement("td");
   td1.textContent = prod?.Barcode;
   var td2 = document.createElement("td");
-  td2.textContent = prod?.ProcudtName;
+  td2.textContent = prod?.ProductName;
   var td3 = document.createElement("td");
   td3.textContent = prod?.ProdLine;
   var td4 = document.createElement("td");

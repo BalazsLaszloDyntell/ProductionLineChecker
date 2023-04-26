@@ -35,10 +35,11 @@ public class NotificationController : ControllerBase
     [HttpPost()]
     public async Task<ActionResult> CollectDelay(DelayIssue delayIssue, [FromServices] DaprClient daprClient)
     {
-        var body = EmailUtils.CreateEmailBody(delayIssue, null); //TODO: product info
+
+        var body = EmailUtils.CreateEmailBody(delayIssue);
         var metadata = new Dictionary<string, string>
         {
-            ["emailFrom"] = "noreply@cfca.gov",
+            ["emailFrom"] = "noreply@plc.prod",
             ["emailTo"] = "boss@gmail.com",
             ["subject"] = $"Delay issue on the {delayIssue.productionLineId}"
         };

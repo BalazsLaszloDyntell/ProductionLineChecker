@@ -75,14 +75,16 @@ public class ProcessController : ControllerBase
 
             _logger.LogInformation("Delay: {0}", delay);
 
-            if (delay > 8)
+            if (delay > 8) //8 seconds to send more mails for verification
             {
                 var productionIssue = new ProductionIssue
                 {
                     ProductId = msg.Barcode,
-                    ProductionLineId = _productionLineId,
+                    ProductName = msg.ProductName,
+                    ProductionLineId = msg.ProdLine,
                     Delay = delay,
-                    Timestamp = msg.Timestamp
+                    StartTimestamp = exitState.EntryTimestamp,
+                    EndTimestamp = exitState.ExitTimestamp.Value
                 };
                 // publish speedingviolation (Dapr publish / subscribe)
                 await daprClient.PublishEventAsync("pubsub", "delayissue", productionIssue);

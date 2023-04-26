@@ -5,8 +5,7 @@ namespace NotificationService.Helpers;
 public class EmailUtils
 {
     public static string CreateEmailBody(
-        DelayIssue delayIssue,
-        ProductInfo? productInfo)
+        DelayIssue delayIssue)
     {
         return $@"
                 <html>
@@ -62,73 +61,32 @@ public class EmailUtils
                         </style>
                     </head>
                     <body>
-						<div class='logo'>
-							<svg version='1.1' width='105px' height='85px' viewBox='-0.5 -0.5 105 85'><defs/><g><path d='M 25.51 71.39 L 45.51 31.2 L 97.04 31.2 L 77.04 71.39 Z' fill='#000000' stroke='none' transform='translate(2,3)rotate(-15,61.27,51.29)' opacity='0.25'/><path d='M 25.51 71.39 L 45.51 31.2 L 97.04 31.2 L 77.04 71.39 Z' fill='#e6e6e6' stroke='none' transform='rotate(-15,61.27,51.29)' pointer-events='all'/><path d='M 15.51 60.24 L 35.51 20.05 L 87.04 20.05 L 67.04 60.24 Z' fill='#000000' stroke='none' transform='translate(2,3)rotate(-15,51.27,40.14)' opacity='0.25'/><path d='M 15.51 60.24 L 35.51 20.05 L 87.04 20.05 L 67.04 60.24 Z' fill='#2aa3d9' stroke='none' transform='rotate(-15,51.27,40.14)' pointer-events='all'/><path d='M 4.39 49.08 L 24.39 8.89 L 75.92 8.89 L 55.92 49.08 Z' fill='#000000' stroke='none' transform='translate(2,3)rotate(-15,40.16,28.99)' opacity='0.25'/><path d='M 4.39 49.08 L 24.39 8.89 L 75.92 8.89 L 55.92 49.08 Z' fill='#005d91' stroke='none' transform='rotate(-15,40.16,28.99)' pointer-events='all'/></g></svg>
-						</div>
-						<div class='title'>
-							<h4 class='logo-name'>Central Fine Collection Agency</h4>
-							<div class='logo-bar'>&nbsp;</div>
-						</div>
-                        <p>The Hague, {DateTime.Now.ToLongDateString()}</p>
+                        <p>Time, {DateTime.Now.ToLongDateString()}</p>
                         
-                        <p>Dear Mr. / Miss / Mrs. productInfo.OwnerName,</p>
-                        
-                        <p>We hereby inform you of the fact that a speeding violation was detected with a 
-                        vehicle that is registered to you.</p>
+                        <p>Dear Mr. Andrei,</p>
 						
-						<p>The violation was detected by a speeding camera. We have a digital image of your 
-                        vehicle committing the violation on record in our system. If requested by your 
-                        solicitor, we will provide this image to you.</p>
-
-						<hr/>
-						
-						<p>Below you can find all the details of the violation.</p>
+						<p>Our system observed a delay in the production line. Below you can find all the details of the delay.</p>
 
                         <p>
-                            <b>Vehicle information:</b>
+                            <b>Product information:</b>
                             <table>
-                                <tr><th>License number</th><td>productInfo.ProductId</td></tr>
-                                <tr><th>Brand</th><td>productInfo.Name</td></tr>
-                                <tr><th>Model</th><td>productInfo.Model</td></tr>
+                                <tr><th>Barcode</th><td>{delayIssue.productId}</td></tr>
+                                <tr><th>Product name</th><td>{delayIssue.productName}</td></tr>
                             </table>
                         </p>
 
                         <p>
-                            <b>Conditions during the violation:</b>
+                            <b>Delay information:</b>
                             <table>
-                                <tr><th>Road</th><td>{delayIssue.productionLineId}</td></tr>
-                                <tr><th>Date</th><td>{delayIssue.timestamp.ToString("dd-MM-yyyy")}</td></tr>
-                                <tr><th>Time of day</th><td>{delayIssue.timestamp.ToString("hh:mm:ss")}</td></tr>
+                                <tr><th>Production line</th><td>{delayIssue.productionLineId}</td></tr>
+                                <tr><th>Time at checkpoint 1</th><td>{delayIssue.startTimestamp.ToString("HH:mm:ss")}</td></tr>
+                                <tr><th>Time at checkpoint 2</th><td>{delayIssue.endTimestamp.ToString("HH:mm:ss")}</td></tr>
+                                <tr><th>Delay</th><td>{delayIssue.delay}s</td></tr>
                             </table>							
-                        </p>
-						
-                        <p>
-                            <b>Sanction:</b>
-                            <table>
-                                <tr><th>Maximum speed violation</th><td>{delayIssue.delay} KMh</td></tr>
-                            </table>							
-                        </p>		
-
-						<hr/>
-							
-						<p><b>Sanction handling:</b></p>
-							
-						<p>If the amount of the fine is to be determined by the prosecutor, you will receive a notice 
-                        to appear in court shortly.</p>
-						
-                        <p>Otherwise, you must pay the sanctioned fine <b>within 8 weeks</b> after the date of this 
-                        email. If you fail to pay within 8 weeks, you will receive a first reminder email and <b>the 
-                        fine will be increased to 1.5x the original fine amount</b>. If you fail to pay within 8 weeks 
-                        after the first reminder, you will receive a second and last reminder email and <b>the fine 
-                        will be increased to 3x the original fine amount</b>. If you fail to pay within 8 weeks 
-                        after the second reminder, the case is turned over to the prosecutor and you will receive a 
-                        notice to appear in court.</p>
-
-						<hr/>
-									
+                        </p>						
 						<p>
 						Yours sincerely,<br/>
-						The Central Fine Collection Agency
+						Production Line Checker
 						</p>
                     </body>
                 </html>

@@ -1,42 +1,42 @@
 [
   {
     "Barcode": "1234567890",
-    "ProcudtName": "Product A"
+    "ProductName": "Product A"
   },
   {
     "Barcode": "2345678901",
-    "ProcudtName": "Product B"
+    "ProductName": "Product B"
   },
   {
     "Barcode": "3456789012",
-    "ProcudtName": "Product C"
+    "ProductName": "Product C"
   },
   {
     "Barcode": "4567890123",
-    "ProcudtName": "Product D"
+    "ProductName": "Product D"
   },
   {
     "Barcode": "5678901234",
-    "ProcudtName": "Product E"
+    "ProductName": "Product E"
   },
   {
     "Barcode": "6789012345",
-    "ProcudtName": "Product F"
+    "ProductName": "Product F"
   },
   {
     "Barcode": "7890123456",
-    "ProcudtName": "Product G"
+    "ProductName": "Product G"
   },
   {
     "Barcode": "8901234567",
-    "ProcudtName": "Product H"
+    "ProductName": "Product H"
   },
   {
     "Barcode": "9012345678",
-    "ProcudtName": "Product I"
+    "ProductName": "Product I"
   },
   {
     "Barcode": "0123456789",
-    "ProcudtName": "Product J"
+    "ProductName": "Product J"
   }
 ]
