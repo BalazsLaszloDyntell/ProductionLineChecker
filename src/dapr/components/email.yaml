@@ -2,7 +2,7 @@ apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
   name: sendmail
-  namespace: dapr-trafficcontrol
+  namespace: dapr-signalprocess
 spec:
   type: bindings.smtp
   version: v1
@@ -10,7 +10,7 @@ spec:
   - name: host
     value: localhost
   - name: port
-    value: 1125
+    value: 4025
   - name: user
     secretKeyRef:
       name: smtp.user

@@ -96,16 +96,16 @@ public class EmailUtils
                         <p>
                             <b>Conditions during the violation:</b>
                             <table>
-                                <tr><th>Road</th><td>{delayIssue.ProductionLineID}</td></tr>
-                                <tr><th>Date</th><td>{delayIssue.Timestamp.ToString("dd-MM-yyyy")}</td></tr>
-                                <tr><th>Time of day</th><td>{delayIssue.Timestamp.ToString("hh:mm:ss")}</td></tr>
+                                <tr><th>Road</th><td>{delayIssue.productionLineId}</td></tr>
+                                <tr><th>Date</th><td>{delayIssue.timestamp.ToString("dd-MM-yyyy")}</td></tr>
+                                <tr><th>Time of day</th><td>{delayIssue.timestamp.ToString("hh:mm:ss")}</td></tr>
                             </table>							
                         </p>
 						
                         <p>
                             <b>Sanction:</b>
                             <table>
-                                <tr><th>Maximum speed violation</th><td>{delayIssue.Delay} KMh</td></tr>
+                                <tr><th>Maximum speed violation</th><td>{delayIssue.delay} KMh</td></tr>
                             </table>							
                         </p>		
 

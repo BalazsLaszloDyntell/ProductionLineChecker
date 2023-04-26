@@ -35,9 +35,8 @@ public class ProcessController : ControllerBase
         try
         {
             // log entry
-            _logger.LogInformation($"ENTRY detected in lane {msg.Lane} at {msg.Timestamp.ToString("hh:mm:ss")} " +
+            _logger.LogInformation($"ENTRY detected in {msg.ProdLine} at {msg.Timestamp.ToString("hh:mm:ss")} " +
                 $"of product with barcode {msg.Barcode}.");
-            Console.WriteLine("asdasdasd");
             // store product state
             var productState = new ProductState(msg.Barcode, msg.Timestamp, null);
             await _productStateRepository.SaveProductStateAsync(productState);
@@ -64,7 +63,7 @@ public class ProcessController : ControllerBase
             }
 
             // log exit
-            _logger.LogInformation($"EXIT detected in lane {msg.Lane} at {msg.Timestamp.ToString("hh:mm:ss")} " +
+            _logger.LogInformation($"EXIT detected in {msg.ProdLine} at {msg.Timestamp.ToString("hh:mm:ss")} " +
                 $"of product with barcode {msg.Barcode}.");
 
             // update state
@@ -73,18 +72,17 @@ public class ProcessController : ControllerBase
 
             // handle possible speeding violation
             int delay = _expectedSpeedCalculator.DetermineDelay(exitState.EntryTimestamp, exitState.ExitTimestamp.Value);
-            if (true)
+            if (delay > 0)
             {
                 var productionIssue = new ProductionIssue
                 {
                     ProductId = msg.Barcode,
                     ProductionLineId = _productionLineId,
-                    DelayInMm = delay,
+                    Delay = delay,
                     Timestamp = msg.Timestamp
                 };
-
                 // publish speedingviolation (Dapr publish / subscribe)
-                await daprClient.PublishEventAsync("pubsub", "speedingviolations", productionIssue);
+                await daprClient.PublishEventAsync("pubsub", "delayissue", productionIssue);
             }
 
             return Ok();

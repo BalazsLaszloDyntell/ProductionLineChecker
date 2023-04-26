@@ -13,8 +13,8 @@ namespace SignalRChat.Hubs
       for (var i = 0; i < prodLines; i++)
       {
           int scanNumber = i + 1;
-          var trafficControlService = await MqttSignalProcessService.CreateAsync(scanNumber);
-          scanners[i] = new Scanner(scanNumber, trafficControlService, this);
+          var signalprocessService = await MqttSignalProcessService.CreateAsync(scanNumber);
+          scanners[i] = new Scanner(scanNumber, signalprocessService, this);
       }
       Parallel.ForEach(scanners, scan => scan.StartProd());
 

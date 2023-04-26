@@ -23,7 +23,7 @@ public class ProductActor : Actor, IProductActor, IRemindable
     {
         try
         {
-            Logger.LogInformation($"ENTRY detected in lane {msg.Lane} at " +
+            Logger.LogInformation($"ENTRY detected in lane {msg.ProdLine} at " +
                 $"{msg.Timestamp.ToString("hh:mm:ss")} " +
                 $"of product with barcode {msg.Barcode}.");
 
@@ -46,7 +46,7 @@ public class ProductActor : Actor, IProductActor, IRemindable
     {
         try
         {
-            Logger.LogInformation($"EXIT detected in lane {msg.Lane} at " +
+            Logger.LogInformation($"EXIT detected in lane {msg.ProdLine} at " +
                 $"{msg.Timestamp.ToString("hh:mm:ss")} " +
                 $"of product with barcode {msg.Barcode}.");
 
@@ -67,12 +67,12 @@ public class ProductActor : Actor, IProductActor, IRemindable
                 {
                     ProductId = msg.Barcode,
                     ProductionLineId = _productionLineId,
-                    DelayInMm = delay,
+                    Delay = delay,
                     Timestamp = msg.Timestamp
                 };
 
                 // publish speedingviolation (Dapr publish / subscribe)
-                await _daprClient.PublishEventAsync("pubsub", "speedingviolations", productionIssue);
+                await _daprClient.PublishEventAsync("pubsub", "delayissue", productionIssue);
             }
         }
         catch (Exception ex)
