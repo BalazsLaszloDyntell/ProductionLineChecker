@@ -8,7 +8,7 @@ spec:
   version: v1
   metadata:
   - name: url
-    value: mqtt://localhost:1323
+    value: mqtt://localhost:1883
   - name: topic
     value: signalprocess/entrycheckpoint
   - name: consumerID

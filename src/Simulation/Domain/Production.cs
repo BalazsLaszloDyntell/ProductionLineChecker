@@ -1,7 +1,7 @@
 public class Production {
   public string Barcode;
-  public string Name;
-  public string ProductionLineId;
+  public string ProcudtName;
+  public string ProdLine;
   public string Checkpoint;
   public DateTime Timestamp;
 }

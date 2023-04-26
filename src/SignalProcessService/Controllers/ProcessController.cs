@@ -73,7 +73,9 @@ public class ProcessController : ControllerBase
             // handle possible speeding violation
             int delay = _expectedSpeedCalculator.DetermineDelay(exitState.EntryTimestamp, exitState.ExitTimestamp.Value);
 
-            if (delay > 10)
+            _logger.LogInformation("Delay: {0}", delay);
+
+            if (delay > 8)
             {
                 var productionIssue = new ProductionIssue
                 {

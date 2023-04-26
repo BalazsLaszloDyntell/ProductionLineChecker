@@ -2,4 +2,4 @@
 # contains the custom configuration file we need for Dapr traffic-control (see mosquitto.conf).
 
 docker build -t dapr-trafficcontrol/mosquitto:1.0 .
-docker run -d -p 1323:1323 -p 3121:3121 --name plc-mosquitto dapr-trafficcontrol/mosquitto:1.0
+docker run -d -p 1883:1883 -p 9001:9001 --name plc-mosquitto dapr-trafficcontrol/mosquitto:1.0

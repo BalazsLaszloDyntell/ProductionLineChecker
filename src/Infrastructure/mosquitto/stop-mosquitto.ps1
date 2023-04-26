@@ -1,1 +1,1 @@
-docker rm plc-mosquitto -f
+docker rm dtc-mosquitto -f

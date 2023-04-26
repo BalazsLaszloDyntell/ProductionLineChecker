@@ -11,7 +11,7 @@ public class DefaultExpectedSpeedCalculator : IExpectedSpeedCalculator
 
     public int DetermineDelay(DateTime entryTimestamp, DateTime exitTimestamp)
     {
-        return Convert.ToInt32(exitTimestamp.Subtract(entryTimestamp).TotalSeconds / 60);
+        return Convert.ToInt32(exitTimestamp.Subtract(entryTimestamp).TotalSeconds); 
     }
 
     public string GetProductionLineId()

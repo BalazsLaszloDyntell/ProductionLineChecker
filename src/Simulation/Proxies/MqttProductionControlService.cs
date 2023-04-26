@@ -20,7 +20,7 @@ public class MqttSignalProcessService : ISignalProcessService
         var factory = new MqttFactory();
         var client = factory.CreateMqttClient();
         var mqttOptions = new MqttClientOptionsBuilder()
-            .WithTcpServer(mqttHost, 1323)
+            .WithTcpServer(mqttHost, 1883)
             .WithClientId($"scan{scanNumber}")
             .Build();
         await client.ConnectAsync(mqttOptions, CancellationToken.None);

@@ -36,7 +36,7 @@ public class Scanner {
           var production = await GetProduction();
           production.Timestamp = entryTimestamp;
           production.Checkpoint = "Checkpoint 1";
-          //await _signalprocessService.SendProductionEntryAsync(production);
+          await _signalProcessService.SendProductionEntryAsync(production);
 
           //send to UI
           await _prodSim.Clients.All.SendAsync("StartProd", JsonConvert.SerializeObject(production));
@@ -47,7 +47,7 @@ public class Scanner {
           production.Timestamp = DateTime.Now;
           production.Checkpoint = "Checkpoint 2";
 
-          //await _signalprocessService.SendProductionExitAsync(production);
+          await _signalProcessService.SendProductionExitAsync(production);
 
           //send to UI
           await _prodSim.Clients.All.SendAsync("StartProd", JsonConvert.SerializeObject(production));
@@ -68,7 +68,7 @@ public class Scanner {
       int index = random.Next(10);
       Production production = productions[index];
 
-      production.ProductionLineId = "Line " + _prodLine;
+      production.ProdLine = "Line " + _prodLine;
 
       return production;
 
