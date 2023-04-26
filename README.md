@@ -56,4 +56,5 @@ Start the services:
      ```console
      dotnet run
      ```
-To see the emails that are sent by the FineCollectionService, open a browser and browse to [http://localhost:4000](http://localhost:4000).
+To see the barcode scan simulation, open a browser and browse to [http://localhost:5215](http://localhost:5215/). After the page is opened, click on `Start production` button, then you will see the scanned barcodes.
+To see the emails that are sent by the SignalProcessService, open a browser and browse to [http://localhost:4000](http://localhost:4000).
